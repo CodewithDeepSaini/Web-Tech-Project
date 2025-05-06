@@ -2,102 +2,14 @@
 <html>
 <head>
   <title>Hogwarts Bookstore</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f0e6cc;
-      margin: 0;
-      padding: 20px;
-      line-height: 1.6;
-    }
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 20px;
-    }
-    h1, h2 {
-      color: #740001;
-      text-align: center;
-    }
-    .book-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-      gap: 20px;
-      margin: 20px 0;
-    }
-    .book {
-      background: white;
-      border-radius: 5px;
-      padding: 15px;
-      text-align: center;
-      border: 1px solid #d3a625;
-    }
-    .book img {
-      width: 150px;
-      height: 200px;
-      object-fit: cover;
-      margin-bottom: 10px;
-    }
-    .price {
-      font-weight: bold;
-      color: #2c5e1a;
-      margin: 10px 0;
-    }
-    button {
-      background: #740001;
-      color: white;
-      border: none;
-      padding: 8px 15px;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-    #welcome-message {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-    #auth-buttons {
-      display: flex;
-      gap: 10px;
-    }
-    .modal {
-      display: none;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0,0,0,0.5);
-      justify-content: center;
-      align-items: center;
-    }
-    .modal-content {
-      background: white;
-      padding: 20px;
-      border-radius: 5px;
-      width: 300px;
-    }
-    .modal input, .modal select {
-      width: 100%;
-      padding: 8px;
-      margin: 8px 0;
-      box-sizing: border-box;
-    }
-    .close {
-      float: right;
-      cursor: pointer;
-    }
-    .form-group {
-      margin-bottom: 10px;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     <h1>Hogwarts Bookstore</h1>
     <div id="auth-buttons">
       <button onclick="showModal('signin')">Sign In</button>
-      <button onclick="showModal('signup')">Sign Up</button>
+      <button onclick="location.href='index.html'">Sign Up</button>
     </div>
   </header>
 
@@ -107,17 +19,14 @@
 
   <h2>Our Books</h2>
   <div class="book-grid">
-    <!-- Book entries remain the same as before -->
-    <!-- Book 1 -->
     <div class="book">
       <img src="https://m.media-amazon.com/images/I/81q77Q39nEL._AC_UF1000,1000_QL80_.jpg" alt="Philosopher's Stone">
       <h3>Philosopher's Stone</h3>
       <p>by J.K. Rowling</p>
       <div class="price">$12.99</div>
-      <button onclick="alert('Added Philosopher\\'s Stone to cart!')">Add to Cart</button>
+      <button onclick="alert('Added Philosopher\'s Stone to cart!')">Add to Cart</button>
     </div>
     
-    <!-- Book 2 -->
     <div class="book">
       <img src="https://m.media-amazon.com/images/I/91OINeHnJGL._AC_UF1000,1000_QL80_.jpg" alt="Chamber of Secrets">
       <h3>Chamber of Secrets</h3>
@@ -125,8 +34,7 @@
       <div class="price">$13.50</div>
       <button onclick="alert('Added Chamber of Secrets to cart!')">Add to Cart</button>
     </div>
-    
-    <!-- Book 3 -->
+
     <div class="book">
       <img src="https://m.media-amazon.com/images/I/81lAPl9Fl0L._AC_UF1000,1000_QL80_.jpg" alt="Prisoner of Azkaban">
       <h3>Prisoner of Azkaban</h3>
@@ -134,8 +42,7 @@
       <div class="price">$14.25</div>
       <button onclick="alert('Added Prisoner of Azkaban to cart!')">Add to Cart</button>
     </div>
-    
-    <!-- Book 4 -->
+  
     <div class="book">
       <img src="https://m.media-amazon.com/images/I/81YOuOGFCJL._AC_UF1000,1000_QL80_.jpg" alt="Goblet of Fire">
       <h3>Goblet of Fire</h3>
@@ -144,7 +51,6 @@
       <button onclick="alert('Added Goblet of Fire to cart!')">Add to Cart</button>
     </div>
     
-    <!-- Book 5 -->
     <div class="book">
       <img src="https://m.media-amazon.com/images/I/81lAPl9Fl0L._AC_UF1000,1000_QL80_.jpg" alt="Order of the Phoenix">
       <h3>Order of the Phoenix</h3>
@@ -153,7 +59,6 @@
       <button onclick="alert('Added Order of the Phoenix to cart!')">Add to Cart</button>
     </div>
     
-    <!-- Book 6 -->
     <div class="book">
       <img src="https://m.media-amazon.com/images/I/71ykU-RQ0nL._AC_UF1000,1000_QL80_.jpg" alt="Half-Blood Prince">
       <h3>Half-Blood Prince</h3>
@@ -162,18 +67,16 @@
       <button onclick="alert('Added Half-Blood Prince to cart!')">Add to Cart</button>
     </div>
     
-    <!-- Book 7 -->
     <div class="book">
-      <img src="https://m.media-amazon.com/images/I/71Q4qxgms8L._AC_UF1000,1000_QL80_.jpg" alt="Deathly Hallows">
+      <img src="https://imgs.search.brave.com/ObwRmAaxuxgaeLO-BkZ2qzmk78F53VxC3z_J_DxkgIc/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NTFFN052VkxPOUwu/anBn" alt="Deathly Hallows">
       <h3>Deathly Hallows</h3>
       <p>by J.K. Rowling</p>
       <div class="price">$18.99</div>
       <button onclick="alert('Added Deathly Hallows to cart!')">Add to Cart</button>
     </div>
     
-    <!-- Book 8 -->
     <div class="book">
-      <img src="https://m.media-amazon.com/images/I/91vs5ZMZf8L._AC_UF1000,1000_QL80_.jpg" alt="Fantastic Beasts">
+      <img src="https://imgs.search.brave.com/VcFYFQPzekAg3CwYHPi87R2Sjmu0rX3C8ME4Tq2vOVE/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NTFOUXVXN1BuWUwu/anBn" alt="Fantastic Beasts">
       <h3>Fantastic Beasts</h3>
       <p>by J.K. Rowling</p>
       <div class="price">$11.25</div>
@@ -181,139 +84,24 @@
     </div>
   </div>
 
-  <!-- Sign In Modal -->
-  <div id="signin-modal" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal('signin')">&times;</span>
-      <h2>Sign In</h2>
-      <div class="form-group">
-        <input type="email" id="signin-email" placeholder="Email">
-      </div>
-      <div class="form-group">
-        <input type="password" id="signin-password" placeholder="Password">
-      </div>
-      <button onclick="signIn()">Sign In</button>
+<div id="signin-modal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h2>Sign In</h2>
+    <div class="form-group">
+      <label for="username">Enter Your Name:</label>
+      <input type="text" id="username" placeholder="Harry Potter" required>
     </div>
-  </div>
-
-  <!-- Sign Up Modal -->
-  <div id="signup-modal" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal('signup')">&times;</span>
-      <h2>Sign Up</h2>
-      <div class="form-group">
-        <input type="text" id="signup-firstname" placeholder="First Name" required>
-      </div>
-      <div class="form-group">
-        <input type="text" id="signup-lastname" placeholder="Last Name" required>
-      </div>
-      <div class="form-group">
-        <select id="signup-gender">
-          <option value="">Select Gender</option>
-          <option value="male">Male</option>
-          <option value="female">Female</option>
-          <option value="other">Other</option>
-          <option value="prefer-not-to-say">Prefer not to say</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <input type="number" id="signup-age" placeholder="Age" min="1" max="120" required>
-      </div>
-      <div class="form-group">
-        <input type="email" id="signup-email" placeholder="Email" required>
-      </div>
-      <div class="form-group">
-        <input type="password" id="signup-password" placeholder="Password" required>
-      </div>
-      <button onclick="signUp()">Sign Up</button>
+    <div class="form-group">
+      <label for="password">Enter Your Password:</label>
+      <input type="password" id="password" placeholder="********" required>
     </div>
+    <button onclick="signInUser()">Sign In</button>
   </div>
+</div>
 
-  <script>
-    // Show modal function
-    function showModal(type) {
-      document.getElementById(`${type}-modal`).style.display = 'flex';
-    }
 
-    // Close modal function
-    function closeModal(type) {
-      document.getElementById(`${type}-modal`).style.display = 'none';
-    }
 
-    // Simple sign in function
-    function signIn() {
-      const email = document.getElementById('signin-email').value;
-      const password = document.getElementById('signin-password').value;
-      
-      if (email && password) {
-        const user = JSON.parse(localStorage.getItem('userData') || '{}');
-        if (user.email === email && user.password === password) {
-          localStorage.setItem('loggedIn', 'true');
-          updateWelcomeMessage(user.firstName);
-          closeModal('signin');
-        } else {
-          alert('Invalid email or password');
-        }
-      } else {
-        alert('Please enter both email and password');
-      }
-    }
-
-    // Simple sign up function
-    function signUp() {
-      const firstName = document.getElementById('signup-firstname').value;
-      const lastName = document.getElementById('signup-lastname').value;
-      const gender = document.getElementById('signup-gender').value;
-      const age = document.getElementById('signup-age').value;
-      const email = document.getElementById('signup-email').value;
-      const password = document.getElementById('signup-password').value;
-      
-      if (firstName && lastName && email && password && age && gender) {
-        const userData = {
-          firstName,
-          lastName,
-          gender,
-          age,
-          email,
-          password
-        };
-        
-        localStorage.setItem('userData', JSON.stringify(userData));
-        localStorage.setItem('loggedIn', 'true');
-        updateWelcomeMessage(firstName);
-        closeModal('signup');
-      } else {
-        alert('Please fill all fields');
-      }
-    }
-
-    // Update welcome message
-    function updateWelcomeMessage(firstName) {
-      document.getElementById('welcome-message').textContent = 
-        `Welcome, ${firstName}! Enjoy our magical book collection.`;
-      document.getElementById('auth-buttons').innerHTML = 
-        `<button onclick="signOut()">Sign Out</button>`;
-    }
-
-    // Simple sign out function
-    function signOut() {
-      localStorage.removeItem('loggedIn');
-      document.getElementById('welcome-message').textContent = 
-        'Welcome to our magical book collection!';
-      document.getElementById('auth-buttons').innerHTML = `
-        <button onclick="showModal('signin')">Sign In</button>
-        <button onclick="showModal('signup')">Sign Up</button>`;
-    }
-
-    // Check if user is logged in on page load
-    window.onload = function() {
-      if (localStorage.getItem('loggedIn') === 'true') {
-        const userData = JSON.parse(localStorage.getItem('userData') || '{}');
-        if (userData.firstName) {
-          updateWelcomeMessage(userData.firstName);
-        }
-      }
-    }
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
