@@ -14,5 +14,5 @@ document.getElementById('signup-form').addEventListener('submit', function(e) {
     }
 
     alert(`Account created for ${firstname} ${lastname}!`);
-    window.location.href = "index.html"; // Redirect to homepage
+    window.location.href = "index.html";
   });

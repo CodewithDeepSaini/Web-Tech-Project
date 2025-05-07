@@ -6,9 +6,8 @@
 </head>
 <body>
   <header>
-    <h1>Hogwarts Bookstore</h1>
+    <h1>Hogwarts Library</h1>
     <div id="auth-buttons">
-      <button onclick="showModal('signin')">Sign In</button>
       <button onclick="location.href='index.html'">Sign Up</button>
     </div>
   </header>
@@ -23,7 +22,7 @@
       <img src="https://m.media-amazon.com/images/I/81q77Q39nEL._AC_UF1000,1000_QL80_.jpg" alt="Philosopher's Stone">
       <h3>Philosopher's Stone</h3>
       <p>by J.K. Rowling</p>
-      <div class="price">$12.99</div>
+      <div class="price">&#8377;1999</div>
       <button onclick="alert('Added Philosopher\'s Stone to cart!')">Add to Cart</button>
     </div>
     
@@ -31,7 +30,7 @@
       <img src="https://m.media-amazon.com/images/I/91OINeHnJGL._AC_UF1000,1000_QL80_.jpg" alt="Chamber of Secrets">
       <h3>Chamber of Secrets</h3>
       <p>by J.K. Rowling</p>
-      <div class="price">$13.50</div>
+      <div class="price">&#8377;1299</div>
       <button onclick="alert('Added Chamber of Secrets to cart!')">Add to Cart</button>
     </div>
 
@@ -39,7 +38,7 @@
       <img src="https://m.media-amazon.com/images/I/81lAPl9Fl0L._AC_UF1000,1000_QL80_.jpg" alt="Prisoner of Azkaban">
       <h3>Prisoner of Azkaban</h3>
       <p>by J.K. Rowling</p>
-      <div class="price">$14.25</div>
+      <div class="price">&#8377;1499</div>
       <button onclick="alert('Added Prisoner of Azkaban to cart!')">Add to Cart</button>
     </div>
   
@@ -47,7 +46,7 @@
       <img src="https://m.media-amazon.com/images/I/81YOuOGFCJL._AC_UF1000,1000_QL80_.jpg" alt="Goblet of Fire">
       <h3>Goblet of Fire</h3>
       <p>by J.K. Rowling</p>
-      <div class="price">$15.75</div>
+      <div class="price">&#8377;1299</div>
       <button onclick="alert('Added Goblet of Fire to cart!')">Add to Cart</button>
     </div>
     
@@ -55,7 +54,7 @@
       <img src="https://m.media-amazon.com/images/I/81lAPl9Fl0L._AC_UF1000,1000_QL80_.jpg" alt="Order of the Phoenix">
       <h3>Order of the Phoenix</h3>
       <p>by J.K. Rowling</p>
-      <div class="price">$16.99</div>
+      <div class="price">&#8377;1999</div>
       <button onclick="alert('Added Order of the Phoenix to cart!')">Add to Cart</button>
     </div>
     
@@ -63,7 +62,7 @@
       <img src="https://m.media-amazon.com/images/I/71ykU-RQ0nL._AC_UF1000,1000_QL80_.jpg" alt="Half-Blood Prince">
       <h3>Half-Blood Prince</h3>
       <p>by J.K. Rowling</p>
-      <div class="price">$17.50</div>
+      <div class="price">&#8377;999</div>
       <button onclick="alert('Added Half-Blood Prince to cart!')">Add to Cart</button>
     </div>
     
@@ -71,7 +70,7 @@
       <img src="https://imgs.search.brave.com/ObwRmAaxuxgaeLO-BkZ2qzmk78F53VxC3z_J_DxkgIc/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NTFFN052VkxPOUwu/anBn" alt="Deathly Hallows">
       <h3>Deathly Hallows</h3>
       <p>by J.K. Rowling</p>
-      <div class="price">$18.99</div>
+      <div class="price">&#8377;1299</div>
       <button onclick="alert('Added Deathly Hallows to cart!')">Add to Cart</button>
     </div>
     
@@ -79,28 +78,10 @@
       <img src="https://imgs.search.brave.com/VcFYFQPzekAg3CwYHPi87R2Sjmu0rX3C8ME4Tq2vOVE/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NTFOUXVXN1BuWUwu/anBn" alt="Fantastic Beasts">
       <h3>Fantastic Beasts</h3>
       <p>by J.K. Rowling</p>
-      <div class="price">$11.25</div>
+      <div class="price">&#8377;1999</div>
       <button onclick="alert('Added Fantastic Beasts to cart!')">Add to Cart</button>
     </div>
   </div>
-
-<div id="signin-modal" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal()">&times;</span>
-    <h2>Sign In</h2>
-    <div class="form-group">
-      <label for="username">Enter Your Name:</label>
-      <input type="text" id="username" placeholder="Harry Potter" required>
-    </div>
-    <div class="form-group">
-      <label for="password">Enter Your Password:</label>
-      <input type="password" id="password" placeholder="********" required>
-    </div>
-    <button onclick="signInUser()">Sign In</button>
-  </div>
-</div>
-
-
 
   <script src="script.js"></script>
 </body>

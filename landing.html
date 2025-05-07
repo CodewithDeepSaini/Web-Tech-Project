@@ -4,108 +4,7 @@
     <meta charset="UTF-8">
     <title>Wizarding Library Entrance</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            height: 100vh;
-            overflow: hidden;
-            position: relative;
-        }
-
-        #background-video {
-            position: absolute;
-            right: 0;
-            bottom: 0;
-            min-width: 100%;
-            min-height: 100%;
-            z-index: -1;
-            filter: brightness(0.7);
-        }
-
-        .overlay {
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-            position: relative;
-        }
-
-        .logo {
-            font-size: 5rem;
-            background: linear-gradient(45deg, #ae0001, #eeba30);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            margin-bottom: 2rem;
-            text-shadow: 0 0 20px rgba(238, 186, 48, 0.3);
-        }
-
-        .enter-btn {
-            padding: 18px 45px;
-            font-size: 1.5rem;
-            background: linear-gradient(45deg, #ae0001, #eeba30);
-            border: none;
-            color: white;
-            border-radius: 50px;
-            cursor: pointer;
-            transition: all 0.3s;
-            position: relative;
-            overflow: hidden;
-            margin-top: 3rem;
-            box-shadow: 0 0 30px rgba(174, 0, 1, 0.4);
-        }
-
-        .enter-btn:hover {
-            transform: scale(1.05);
-            box-shadow: 0 0 40px rgba(174, 0, 1, 0.6);
-        }
-
-        .sparks {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-        }
-
-        .spark {
-            position: absolute;
-            background: rgba(238, 186, 48, 0.8);
-            width: 3px;
-            height: 20px;
-            animation: sparkle 2s infinite;
-        }
-
-        @keyframes sparkle {
-            0% { transform: translateY(-100vh) rotate(0deg); }
-            100% { transform: translateY(100vh) rotate(360deg); }
-        }
-
-        .house-icons {
-            position: absolute;
-            bottom: 30px;
-            display: flex;
-            gap: 25px;
-            opacity: 0.7;
-        }
-
-        .house-icon {
-            font-size: 2rem;
-            transition: all 0.3s;
-        }
-
-        .gryffindor { color: #ae0001; }
-        .slytherin { color: #2a623d; }
-        .ravenclaw { color: #0e1a40; }
-        .hufflepuff { color: #ecb939; }
-    </style>
+    <link rel="stylesheet" href="landing.css">
 </head>
 <body>
     <video autoplay muted loop id="background-video">
@@ -113,7 +12,6 @@
     </video>
 
     <div class="overlay">
-        <!-- Animated sparks -->
         <div class="sparks">
             <div class="spark" style="left: 10%; animation-delay: 0.5s"></div>
             <div class="spark" style="left: 30%; animation-delay: 1.2s"></div>
@@ -124,7 +22,7 @@
 
         <div class="logo">Hogwarts Library</div>
         
-        <button class="enter-btn" onclick="window.location.href='library.html'">
+        <button class="enter-btn" onclick="window.location.href='home.html'">
             Begin Your Journey
         </button>
 
