@@ -7,15 +7,15 @@
 <body>
   <div class="form-container">
     <h2>Create an Account</h2>
-    <form id="signup-form">
+    <form id="signup-form" method="POST" action="signup.php">
       <div class="form-group">
-        <input type="text" id="signup-firstname" placeholder="First Name" required>
+        <input type="text" id="signup-firstname" name="signup-firstname" placeholder="First Name" required>
       </div>
       <div class="form-group">
-        <input type="text" id="signup-lastname" placeholder="Last Name" required>
+        <input type="text" id="signup-lastname" name="signup-lastname" placeholder="Last Name" required>
       </div>
       <div class="form-group">
-        <select id="signup-gender" required>
+        <select id="signup-gender" name="signup-gender" required>
           <option value="">Select Gender</option>
           <option value="male">Male</option>
           <option value="female">Female</option>
@@ -24,13 +24,13 @@
         </select>
       </div>
       <div class="form-group">
-        <input type="number" id="signup-age" placeholder="Age" min="1" max="120" required>
+        <input type="number" id="signup-age" name="signup-age" placeholder="Age" min="1" max="120" required>
       </div>
       <div class="form-group">
-        <input type="email" id="signup-email" placeholder="Email" required>
+        <input type="email" id="signup-email" name="signup-email" placeholder="Email" required>
       </div>
       <div class="form-group">
-        <input type="password" id="signup-password" placeholder="Password" required>
+        <input type="password" id="signup-password" name="signup-password" placeholder="Password" required>
       </div>
       <button type="submit">Sign Up</button>
     </form>
