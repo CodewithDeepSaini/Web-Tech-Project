@@ -1,64 +1,98 @@
+@font-face {
+  font-family: 'Harry Potter';
+  src: url('harryp.ttf') format('truetype');
+}
+
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f0e6cc;
-  margin: 0;
-  padding: 0;
-  height: 100vh;
+  font-family: 'Cinzel Decorative', cursive;
+  background-color: #121212;
+  color: #f5f5f5;
+  min-height: 100vh;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 20px;
 }
 
 .form-container {
+  background: #1e1e1e;
+  padding: 2rem;
+  border-radius: 10px;
+  border: 1px solid #333;
+  box-shadow: 0 0 20px rgba(211, 166, 37, 0.2);
   width: 100%;
   max-width: 400px;
-  padding: 30px;
-  background-color: #f2f2f2;
-  border-radius: 15px;
-  box-shadow: 0 0 15px rgba(116, 0, 1, 0.3);
-  text-align: center;
 }
 
-.form-container h2 {
-  color: #740001;
-  margin-bottom: 20px;
+h2 {
+  font-family: 'Harry Potter', sans-serif;
+  font-size: 2rem;
+  color: #d3a625;
+  text-align: center;
+  margin-bottom: 1.5rem;
 }
 
 .form-group {
-  margin-bottom: 15px;
-  text-align: left;
+  margin-bottom: 1.2rem;
 }
 
-.form-group label {
-  font-weight: bold;
-  color: #4B0082;
-}
-
-input, select {
+input,
+select {
   width: 100%;
-  padding: 10px;
-  margin-top: 5px;
+  padding: 10px 12px;
+  background: #2b2b2b;
+  border: 1px solid #444;
+  color: #f5f5f5;
   border-radius: 5px;
-  border: 1px solid #ccc;
-  font-size: 14px;
+  font-family: inherit;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
 }
 
-button {
+input:focus,
+select:focus {
+  border-color: #d3a625;
+  outline: none;
+}
+
+input::placeholder {
+  color: #aaa;
+}
+
+select {
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23d3a625'%3e%3cpath d='M7 10l5 5 5-5z'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 1em;
+}
+
+button[type="submit"] {
   width: 100%;
   padding: 12px;
+  background: #d3a625;
+  color: #1e1e1e;
   border: none;
-  background-color: #740001;
-  color: white;
-  font-size: 16px;
-  font-weight: bold;
   border-radius: 5px;
+  font-family: 'Harry Potter', sans-serif;
+  font-size: 1.1rem;
+  text-transform: uppercase;
   cursor: pointer;
-  margin-top: 10px;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  transition: background 0.3s ease;
 }
 
-button:hover {
-  background-color: #8a0101;
-  transform: scale(1.02);
+button[type="submit"]:hover {
+  background: #bfa021;
 }
 
+/* Responsive */
+@media (max-width: 480px) {
+  .form-container {
+    padding: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+}
